@@ -1,0 +1,33 @@
+:root {
+    --bg-body:#ffefdf;
+    --fg-txt:#151515;
+    --bg-section: #fff;
+    --fg-link:#1254cf;
+    --fg-link-visited:#22447f;
+    --fg-warn:#c67810;
+    --bg-scrollbar: #4f4f4f;
+}
+@media (prefers-color-scheme:dark) {
+    :root {
+        --bg-body:#151515;
+        --bg-section: #232323;
+        --fg-txt:#cfcfcf;
+        --fg-link:#0099ff;
+        --fg-link-visited:#3275c5;
+        --fg-warn:#ca8f00;
+    }
+}
+body {background-color: var(--bg-body); color: var(--fg-txt);}
+/* clean default button style. */
+::-webkit-scrollbar {background-color: transparent; width: 0.4em;}
+::-webkit-scrollbar-thumb { background-color: var(--bg-scrollbar); border-radius: 0.15em;}
+button { appearance: none; color: inherit; background-color: transparent; border: none; }
+a { text-decoration: none;}
+a:link { color: var(--fg-link); }
+a:visited { color:var(--fg-link); }
+
+aside.attention { color: var(--fg-warn); background-color: var(--bg-section);
+    box-shadow: 0 0 0.25em 0.1em rgba(0, 0, 0, 0.2); border-left: 0.5em solid var(--fg-warn);}
+#navigation:modal {color:var(--fg-body); background-color: var(--bg-body);border:none;}
+#navigation:modal #nav_close { background-color: transparent; color: inherit; border: none; }
+aside.warn p { color: var(--fg-txt);}

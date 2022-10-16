@@ -1,0 +1,29 @@
+:root { font-size:1.5em;}
+* { margin: 0; padding: 0; box-sizing: border-box;
+letter-spacing: 0.06rem; word-break: keep-all;}
+h1 {text-align: center;}
+#menuPopup{font-size:2em;}
+
+html, body, #docs_root { position:relative; width: 100%; height: 100%; overflow: hidden;}
+#docs_root {display: grid; grid-template-rows: auto 1fr;}
+p { line-height: 1.5em; margin: 0.5em 0; }
+#docs_header { gap: 0.5em; display: flex; background-color: var(--bg-body);
+position: sticky; top:0;}
+#docs_header h1 {flex:1;}
+#docs_body {width:100%; height: 100%;  overflow-y: auto; scroll-behavior: smooth;}
+#docs_main { width: 98%;  margin: 0 auto;}
+#menuPopup { width:2em; height: 2em; }
+#navigation:modal {max-height: 100%; min-height: 100%;min-width: 25%; max-width: 60%;}
+#navigation:modal form { width:100%; height:100%; display: grid; grid-template-columns: 1fr auto; grid-template-rows: auto 1fr; }
+#navigation:modal #navigation_title {width: 100%;}
+#navigation:modal #nav_close {grid-column: 2/3; grid-row: 1/2; width: 2.5em; height: 2.5em;}
+#navigation:modal nav{display: flex; flex:1;flex-direction: column;padding: 2em;}
+#navigation:modal nav ul { display:flex; list-style: none; flex-direction: column; padding: 0;}
+#navigation:modal nav ul > li a {width: 100%; display:block; width:100%;}
+aside.attention {padding: 1em 1em 1em 1.5em;min-width: 35%; max-width: 90%; margin: 0.5em;}
+ul.hideBullet { list-style:none; }
+ul, ol { list-style-position: inside;}
+li{ margin: 0.5em 0; line-height: 1.2em; }
+@media (max-width:1024px) {
+    :root{font-size: 0.9em;}
+}
